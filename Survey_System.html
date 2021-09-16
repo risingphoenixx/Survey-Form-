@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SURVEY 2021 </title>
+	<style>
+	body {
+            background-image:linear-gradient(to right, rgba(255,0,0,0),rgba(221,160,221));
+            font-family: Verdana;
+            text-align: center;
+        }
+    form {
+            background-image:linear-gradient(to bottom, rgb(135,206,235),rgb(255,111,255),rgb(227,249,136));
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+        }
+        .cont {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .cont label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .cont input,
+        .cont select,
+        .cont textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .cont input[type="radio"],
+        .cont input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+	</style>
+</head>
+<body>
+    <H1 style="text-align: center;font-family:Serif">Survey Form 2021</H1>
+    <h2 style="text-align: center;font-family:Serif">...Welcome to 2021 Election Survey...</h2>
+ <form id="Container">
+ 	<div class= "cont">
+ 		<label for="Name" id= "name"> Your Name:</label>
+ 		 <input type="text"
+                   id="Name"
+                   placeholder="Enter your name" />
+ 	</div>
+ 	<div class="cont">
+            <label for="email" id="email-id">Your Email :</label>
+             <input type="email"
+                   id="Email-id"
+                   placeholder="Enter your Email Id" />
+    </div>
+    <div class="cont">
+            <label for="date" id="date">Date Of Birth :</label>
+             <input type="date"id="date"/>
+    </div>
+   <div class="cont">
+            <label for="gender" id="gender">Gender :</label>
+             <input type="radio"name="gender">Male
+             <input type="radio"name="gender">Female
+             <input type="radio"name="gender">Prefer not to say
+    </div>
+     <div class="cont">
+            <label for="Marital_Status" id="status">Marital Status :</label>
+             <input type="radio"name="status">Married
+             <input type="radio"name="status">Single
+             <input type="radio"name="status">Divorced
+             <input type="radio"name="status">Prefer not to say
+    </div>
+    <div class="cont">
+            <label for="parties" id="parties">Which politial party do you support :</label>
+             <select id="Parties" name="parties ">
+               <option value="AAP">AAP</option>
+               <option value="BJD">BJD</option>
+               <option value="BJP">BJP</option>
+               <option value="BSP">BSP</option>
+               <option value="CPI">CPI</option>
+               <option value="INC">INC</option>
+               <option value="NCP">NCP</option>
+               <option value="NPP">NPP</option>
+               <option value="RUC">CPI</option>
+               <option value="UDP">UDP</option>
+               <option value="No One">Others</option>
+             </select> 
+    </div>
+ 	<div class= "cont">
+ 		<label for="Name" id= "name"> If Others then Enter your Fav Party else put 'Na':</label>
+ 		 <input type="text"
+                   id="Name"
+                   placeholder="Enter your fav party" />
+ 	</div>
+    <div class="cont">
+            <label for="Marital_Status" id="status">Fav political Leader:</label>
+              <select id="Leader" name="Leader">
+               <option value="BJD">Naveen Pattnayak</option>
+               <option value="BJP">Narendra Modi</option>
+               <option value="BSP">Mamata Banarjee</option>
+               <option value="CPI">P. Sundarayya</option>
+               <option value="INC">Sharad Pawar</option>
+               <option value="NCP">Allan Octavian Hume</option>
+               <option value="NPP">Arvind Kejriwal</option>
+               <option value="RUC">Badruddin Ajmal</option>
+               <option value="UDP">Atul Bora</option>
+               <option value="UDP">Others</option>
+            </select>
+           </div>
+            <div class= "cont">
+ 		     <label for="Name" id= "name"> If Others then Enter your Fav Party else put 'Na':</label>
+               	<input type="text" id="Name"placeholder="Enter your fav leader" />
+ 	        </div>
+ 	        <div class="cont">
+            <label for="Marital_Status" id="status">Which party will win this election:</label>
+             <select id="Parties" name="parties ">
+               <option value="AAP">AAP</option>
+               <option value="BJD">BJD</option>
+               <option value="BJP">BJP</option>
+               <option value="BSP">BSP</option>
+               <option value="CPI">CPI</option>
+               <option value="INC">INC</option>
+               <option value="NCP">NCP</option>
+               <option value="NPP">NPP</option>
+               <option value="RUC">CPI</option>
+               <option value="UDP">UDP</option>
+             </select> 
+            </div>
+            <div class= "cont">
+ 		<label for="Name" id= "name"> Upload your adhar card :</label>
+         <input type="file" name="fileToUpload" id="fileToUpload">
+ 	</div>
+ 	<div class= "cont">
+ 		<label for="Name" id= "name"> What's Your Thought???</label>
+         <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+ 	</div>
+ 	<button type="submit" value="submit">
+            Submit
+        </button>
+        <button type="Cancel" value="Cancel">
+            Cancel
+        </button>
+    </div>
+ </form>
+</body>
+</html>
